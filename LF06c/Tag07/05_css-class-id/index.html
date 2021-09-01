@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS - Klassen und IDs</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="header-main">
+    <h1>
+      CSS Klassen und IDs anhand einer Navigation</h1>
+  </header>
+  <!-- nav#menu-main>ul.list>il*4>a -->
+  <nav id="menu-main">
+    <ul class="list">
+      <li><a href="#home">Startseite</a></li>
+      <li><a href="#id-selector">ID-Selektor</a></li>
+      <li><a href="#class-selector">Klass-Selektor</a></li>
+      <li><a href="#type-selector">Type-Selektor</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="container">
+      <h2 id="home">Startseite</h2>
+      <p>Unterschied von Klassen und ID-Selektoren</p>
+      
+      <details id="id-selector">
+        <summary>(#) ID-Selektor</summary>
+        <p>Selektiert fenau ein Element mit der gegebenen ID. Die ID-Bezeichnung darf nur einmal im Dokument vorkommen.</p>
+      </details>
+
+      <details id="class-selector">
+        <summary>(.) Class-Selektor</summary>
+        <p>Selektiert alle Elemente denen angegebenen KLasse zugewiesen wurde. Ein Element kann mehrere Klassen Besitzen.</p>
+      </details>
+
+    </div>
+  </main>
+  <footer class="footer-main">
+    <p>&copy; Copyright 2021 - HTML & CSS Kompakt</p>
+  </footer>
+</body>
+</html>
