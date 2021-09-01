@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Auflistungen</title>
+  </head>
+  <body>
+    <h1>HTML Auflistungen</h1>
+    <h2>Auflistungen mit <code>&lt;ul&gt;</code></h2>
+    <p>"unordered" HTML Liste</p>
+
+    <!-- Emmet: ul>li*4{Punkt 0$} -->
+    <ul>
+      <li>Punkt 01</li>
+      <li>
+        Punkt 02
+        <ul>
+          <li>Unterpunkt 01</li>
+          <li>
+            Unterpunkt 02
+            <ul>
+              <li>Unterunterpunkt 01</li>
+              <li>Unterunterpunkt 02</li>
+              <li>Unterunterpunkt 03</li>
+            </ul>
+          </li>
+          <li>Unterpunkt 03</li>
+        </ul>
+      </li>
+      <li>Punkt 03</li>
+      <li>Punkt 04</li>
+    </ul>
+
+    <h2>Auflistungen mit <code>&lt;ol&gt;</code></h2>
+    <p>"ordered" HTML Liste</p>
+
+    <!-- Emmet: ol>li*4{Punkt 0$} -->
+    <ol type="a" start="10">
+      <li>Punkt 01</li>
+      <li>
+        Punkt 02
+        <ol type="I">
+          <li>Unterpunkt 01</li>
+          <li>
+            Unterpunkt 02
+            <ol type="a">
+              <li>Unterunterpunkt 01</li>
+              <li>Unterunterpunkt 02</li>
+              <li>Unterunterpunkt 03</li>
+            </ol>
+          </li>
+          <li>Unterpunkt 03</li>
+        </ol>
+      </li>
+      <li>Punkt 03</li>
+      <li>Punkt 04</li>
+    </ol>
+  </body>
+</html>
