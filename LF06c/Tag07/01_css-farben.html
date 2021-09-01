@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Farben</title>
+    <style>
+      *,
+      html {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 1rem;
+      }
+
+      h1,
+      h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        color: tomato;
+      }
+
+      .box {
+        background-color: black;
+        border: 1px solid grey;
+        text-align: center;
+        margin: 3px;
+        color: white;
+        max-width: 150px;
+        padding: 1rem;
+      }
+
+      .box-red {
+        background-color: red;
+        background-color: #ff0000;
+        background-color: #f00;
+        background-color: rgb(255,0,0);
+      }
+
+      .box-green {
+        background-color: lime;
+        background-color: #00ff00;
+        background-color: #0f0;
+        background-color: rgb(0, 255, 0);
+      }
+
+      .box-blue {
+        background-color: blue;
+        background-color: #0000ff;
+        background-color: #00f;
+        background-color: rgb(0,0,255;)
+      }
+
+      .box-magenta {
+        background-color: Magenta;
+        background-color: #ff00ff;
+        background-color: #f0f;
+        background-color: rgb(255,0,255;)
+      }
+
+      .box-chocolate {
+        background-color:chocolate;
+        background-color: #d2691e;
+        background-color: rgb(210,105,30;)
+      }
+
+      .box-caffee {
+        background-color: #caffee;
+      }
+
+      .box-white {
+        background-color:white;
+        background-color: #ffffff;
+        background-color: #fff;
+        background-color: rgb(255,255,255);
+        color: black;
+      }
+
+      .box-black {
+        background-color:black;
+        background-color: #000000;
+        background-color: rgb(00,00,00);
+      }
+
+      .box-alpha {
+        background-image: url('https://placekitten.com/160/120');
+      }
+
+      .box-alpha span {
+        display: block;
+        padding: 1em;
+
+        /* #RRGGBBAA - Deckkraft in der HEX Color Notation wird nicht von allen Browser unterstützt. */
+        background-color: #ffff0060
+
+        background-color: rgba(255, 255, 0, 0.6);
+      }
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h2>CSS Farben</h2>
+        <p>CSS Farbdefinitionen: <a href="https://www.braekling.de/web-design/3311-css3-color-farben-mit-farbtabellen.html">CSS3 Farben</a></p>
+
+        <div class="boxes">
+          <div class="box box-red"><span>Rot</span></div>
+          <div class="box box-green"><span>Grün</span></div>
+          <div class="box box-blue"><span>Blau</span></div>
+          <div class="box box-magenta"><span>Magenta</span></div>
+          <div class="box box-chocolate"><span>Chocolate</span></div>
+          <div class="box box-caffee"><span>Caffee</span></div>
+          <div class="box box-white"><span>Weiß</span></div>
+          <div class="box box-black"><span>Schwarz</span></div>
+        </div>
+
+        <div class="boxes">
+          <div class="box box-alpha">
+            <span>Farbe mit Deckkraft</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
