@@ -1,0 +1,81 @@
+/* Type-selector */
+body {
+  padding: 16px;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+/* Type-selector (Kommatar getrennte Aufzählung) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 400;
+  color: tomato;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: salmon;
+}
+
+a {
+  text-decoration: none;
+  color: salmon;
+  background-color: lightgrey;
+  padding: 20px;
+  /* width: 200px; */
+  display: inline-block;
+
+  /* 
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: red; 
+  */
+  margin: 3px;
+  border-bottom: 1px solid red;
+}
+
+/* 
+a:visited {
+  color: slateblue;
+} 
+*/
+
+a:hover,
+a:focus {
+  color: tomato;
+  background-color: #222;
+  outline: none;
+}
+
+a:active {
+  color: gold;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+/* Descendant combinator */
+ul li {
+  list-style: square;
+  list-style-position: outside;
+}
+
+ul li a {
+  color: magenta;
+  background-color: #2a2a2a;
+  border-bottom: 0;
+  width: 300px;
+  padding: 10px;
+  margin: 3px;
+  display: inline-block;
+}
