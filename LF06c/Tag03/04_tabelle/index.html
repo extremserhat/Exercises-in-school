@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tabelle</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 1px solid #000000;
+        border-collapse: collapse;
+      }
+      table td {
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>HTML Tabelle</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Nr.</th>
+            <th>Cover</th>
+            <th>Filmtitel</th>
+            <th>Genre</th>
+            <th>Jahr</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><img src="assets/img/indiana-jones-1.jpg" alt="Cover - Indiana Jones 1" width="80" /></td>
+            <td>Jäger des verlorenen Schatzes</td>
+            <td>Action, Adventure</td>
+            <td>1981</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><img src="assets/img/die-verurteilten.jpg" alt="Cover - Die Veruteilten" width="80" /></td>
+            <td>Die Verurteilten</td>
+            <td>Drama</td>
+            <td>1994</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><img src="assets/img/die-goonies.jpg" alt="Cover - Die Goonies" width="80" /></td>
+            <td>Die Goonies</td>
+            <td>Adventure, Comedy, Family</td>
+            <td>1985</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><img src="assets/img/starwars-new-hope.jpg" alt="Cover - Krieg der Sterne" width="80" /></td>
+            <td>Krieg der Sterne</td>
+            <td>Action, Adventure, Fantasy</td>
+            <td>1977</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><img src="assets/img/pulp-fiction.jpg" alt="Cover - Pulp Fiction" width="80" /></td>
+            <td>Pulp Fiction</td>
+            <td>Crime, Drama</td>
+            <td>1994</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="5">Tabelleninhalte stammen aus <a href="https://www.imdb.com/" target="_blank" rel="nofollow">imdb.com</a></td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+  </body>
+</html>
