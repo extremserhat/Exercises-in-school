@@ -1,0 +1,114 @@
+/* almgemeine formatierung */
+*,
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  line-height: 1.5em;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+H1,
+h2,
+h2,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+/* Navigation */
+
+.menu-main {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-main ul.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #2a2a2a;
+}
+
+/* (>) child- combinator - ersten Kindelement werden angesprochen */
+.menu-main ul.list > li {
+  display: inline-block;
+}
+
+.menu-main ul.list > li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: steelblue;
+  background-color: #2a2a2a;
+  padding: 1rem;
+  display: inline-block;
+  padding: 10px;
+}
+
+.menu-main ul.list > li > a:hover,
+.menu-main ul.list > li > a:focus {
+  color: white;
+  background: #333;
+
+  transition: all 1s ease 0s;
+
+  /* width: 200px;
+  transition: all 1s cubic-bezier(0.05, 0.75, 0.46, 0.86); */
+
+  /* transition-duration: all 1s ease;
+  transition-property: all;
+  transition-timing-function: ease;
+  transition-delay: 0s; */
+
+  padding: 10px 25px;
+}
+
+.menu-main ul.sublist {
+  position: absolute;
+}
+
+.menu-main ul.sublist {
+  position: absolute;
+  z-index: 9000;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-main ul.sublist > li {
+  background-color: rgba(255, 255, 255, 0.9);
+  min-width: 100px;
+  border-bottom: 1px dotted steelblue;
+}
+
+.menu-main ul.sublist > li > a {
+  color: #2a2a2a;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
+
+/* head Kopfbereich*/
+
+header.header-main {
+  width: 100%;
+  height: 90vh;
+
+  background: #555 url('../img/bg-large.jpg') center/ cover no-repeat border-box;
+  position: relative;
+
+  /*background-color. #555;
+    background-img: url('../img/bg-large.jpg');
+    background-position: center;
+*/
+}
+
+.logo-main img {
+  max-width: 150px;
+}
