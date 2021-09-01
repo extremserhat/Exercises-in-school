@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS</title>
+  <link rel="stylesheet" href="assets/css/fa.css">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  
+</head>
+<body>
+  <nav class="menu-main">
+    <ul class="list">
+     <li><a href="#">Startseite</a>
+    <ul class="sublist">
+      <li><a href="#">CSS - Selektoren</a></li>
+      <li><a href="#">Pseudo Klassen</a></li>
+      <li><a href="#">Pseudo Elemente</a></li>
+    </ul></li>
+     <li><a href="#">Über HTML</a></li>
+     <li><a href="#">Kontakt</a></li>
+   </ul>
+  </nav>
+  <!-- menu main -->
+  <header class="header-main">
+    <div class="box-center">
+      <figure class="logo-main">
+        <img src="assets/img/logo.svg" alt="">
+        <figcaption>HTML Logo</figcaption>
+      </figure>
+    </div>
+  </header>
+  <!-- header - main -->
+  <main id="main">
+    <section class="section-selectors" id="css-selectors">
+      <div class="container">
+    <h2>Startseite - CSS Selektoren</h2>
+    
+
+    <p>
+      Es folgt eine Auflistung der CSS-Selektoren. Dabei handelt es sich um die Möglichkeiten wie man in CSS die HTML-Elemente ansprechen kann.
+    </p>
+
+    <details>
+      <summary>(#) ID-Selektor</summary>
+      <p>Selektiert genau ein Element mit der gegebenen ID.</p>
+    </details>
+
+    <details>
+      <summary>(.) Class-Selektor</summary>
+      <p>Selektiert alle Elemente, denen die angegebene Klasse zugewiesen wurde. Beachten Sie, dass ein Element mehrere Klassen haben kann.</p>
+    </details>
+    <details>
+      <summary>(&gt;) Child combinator</summary>
+      <p>
+        Eine Variante der Nachfahren-Selektoren sind die Kind-Selektoren, mit denen Sie Elemente auswählen können, die direkte »Kinder« von
+        übergeordneten Eltern-Elementen sind.
+      </p>
+    </details>
+    <details>
+      <summary>(+) Adjacent sibling combinator</summary>
+      <p>Mit diesem Selektor können Sie das Element auswählen, das im HTML-Quelltext direkt nachdem angegeben Element folgt.</p>
+    </details>
+    <details>
+      <summary>(~) General sibling combinator</summary>
+      <p>
+        Mit diesem Selektor können Sie alle Elemente auswählen, die im Dokument nach dem angegebenen Element auf der gleichen Ebene
+        (Geschwister-Element) folgen.
+      </p>
+    </details>
+  </div>
+  </section>
+  <section class="section-pseudoclasses">
+    <div class="container">
+      <h2>Pseudoklassen</h2>
+      <p>
+        Es folgt eine Auflistung der wichtigsten CSS-Pseudoklassen. Alle Pseudoklassen:
+        <a href="https://developer.mozilla.org/de/docs/Web/CSS/Pseudo-classes">MDN Liste Pseudoklassen</a> |
+      </p>
+
+    <table class="my-table">
+      <thead>
+        <tr>
+          <th>Pseudoklassen</th>
+          <th>Beschreibung</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>:nth-child()</code></td>
+          <td>
+            <code>:nth-child(an+b)</code> CSS Pseudo-Klasse passt auf ein Element, das im Dokumentbaum an+b-1 Geschwisterknoten vor sich hat,
+            wobei <strong>n</strong> einen gegebenen positiven Wert oder den Wert 0 hat. Zudem muss das Element einen Elternknoten haben.
+            Einfacher ausgedrückt: Beginnend bei einem Startindex b trifft der Selector auf jedes n-te folgende Element zu.
+          </td>
+        </tr>
+        <tr>
+          <td><code>:last-child()</code></td>
+          <td>Die CSS Pseudoklasse repräsentiert jedes Element, das das letzte Kindelement seines Elternelements ist.</td>
+        </tr>
+        <tr>
+          <td><code>:first-child()</code></td>
+          <td>repräsentiert jedes Element, das das erste Kindelement seines Elternelements ist.</td>
+        </tr>
+        <tr>
+          <td><code>:nth-of-type()</code></td>
+          <td>Die CSS Pseudoklasse <code>:nth-of-type(an + b)</code> verhält sich wie die Pseudoklasse <code>:nth-child</code>, spricht jedoch nur die Elemente vom gleichen Typ an.</td>
+        </tr>
+        <tr>
+          <td><code>:not()</code></td>
+          <td>
+            Die CSS Pseudoklasse <code>:not(X)</code> ist eine Negation zu einem Selektor X als Argument und wird als Funktion angegeben. Sie passt auf
+            Elemente, die nicht durch das Argument repräsentiert werden. X darf keinen weiteren Negationsselektor beinhalten.
+          </td>
+        </tr>
+        <tr>
+          <td><code>:link</code></td>
+          <td>
+            Die Pseudoklasse <code>:link</code> repräsentiert den Zustand von einem Link, der bisher noch nicht besucht wurde. 
+          </td>
+        </tr>
+        <tr>
+          <td><code>:hover</code></td>
+          <td>
+            Die <code>:hover</code> CSS Pseudoklasse repräsentiert den Zustand, wenn man mit der Maus über ein Element fährt.
+          </td>
+        </tr>
+        <tr>
+          <td><code>:visited</code></td>
+          <td>
+            Die <code>:visited</code> CSS Pseudoklasse repräsentiert den Zustand für bereits besuchte Links.
+          </td>
+        </tr>
+        <tr>
+          <td><code>:focus</code></td>
+          <td>
+            Die CSS Pseudoklasse <code>:focus</code> steht für Elemente, welche mit einem Eingabegerät, wie z. B. der Tastatur, fokusiert wurden.
+          </td>
+        </tr>
+        <tr>
+          <td><code>:active</code></td>
+          <td>
+            Die Pseudoklasse <code>:active</code> entspricht jedem Element, das vom Benutzer aktiviert wurde. Beim Mauszeiger ist das die Zeitspanne, wo die Taste gedrückt gehalten wird.
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">
+            Weitere Pseudoklassen: <a href="https://developer.mozilla.org/de/docs/Web/CSS/Pseudo-classes">MDN Liste Pseudoklassen</a> |
+            <a href="pdf/05_HTML_CSS-CSS_Pseudoelemente_Pseudoklassen.pdf" target="_blank">Pseudoelemente_Pseudoklassen.pdf</a>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  </section>
+  <section class="section-pseudoelements">
+    <div class="container">
+    <h2>Pseudoelemente</h2>
+    <p>
+      Es folgt eine Auflistung der wichtigsten CSS-Pseudoelemente. Alle Pseudoelemente:
+      <a href="https://developer.mozilla.org/de/docs/Web/CSS/Pseudo-elements">MDN Liste Pseudoelemente</a> |
+    </p>
+
+    <table class="my-table">
+      <thead>
+        <tr>
+          <th>Pseudoelemente</th>
+          <th>Beschreibung</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>::after</code></td>
+          <td>
+            matcht ein virtuelles letztes Kindelement des markierten Elements. Es wird typischerweise dazu verwendet, um kosmetischen Inhalt unter
+            Verwendung der <code>content</code> CSS Eigenschaft zu einem Element hinzuzufügen. Dieses Element ist standardmäßig inline.
+          </td>
+        </tr>
+        <tr>
+          <td><code>::before</code></td>
+          <td>
+            erzeugt ein Pseudoelement, dass das erste Kind des gematchten Elements ist. Es wird oft zu verwendet, um kosmetische Inhalte unter
+            Verwendung der content Eigenschaft zu einem Element hinzuzufügen. Dieses Element ist standardmäßig inline.
+          </td>
+        </tr>
+        <tr>
+          <td><code>::first-letter</code></td>
+          <td>
+            spricht das erste Zeichen eines Elements zusammen mit dessen vorangestellter und nachfolgender Punktierung an. Es kann auf Block- und
+            blockähnliche Elemente (inline-block, Listenpunkte, Tabellenüberschriften und -zellen) angewendet werden.
+          </td>
+        </tr>
+        <tr>
+          <td><code>::first-line</code></td>
+          <td>
+            wird die erste Zeile eines Textes angesprochen. Dieses Pseudoelement zeigt nur Wirkung bei Block- und blockähnlichen Elementen
+            (inline-block, Listenpunkte, Tabellenüberschriften und -zellen).
+          </td>
+        </tr>
+        <tr>
+          <td><code>::selection</code></td>
+          <td>kann die Vorder- und Hintergrundfarbe von ausgewählten Elementen (z.B. markiertem Text) bestimmt werden.</td>
+        </tr>
+        <tr>
+          <td><code>::backdrop</code></td>
+          <td>
+            kann dazu verwendet werden, um einen Hintergrund zu erstellen, der das dahinterliegende Dokument für ein Element im Stack des
+            Toplayers versteckt. Das <code>::backdrop</code> -Pseudoelement liegt zwischen dem obersten Element, z.B. einer Dialog-Box, und den
+            anderen Elementen im Hintergrund.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </section>
+  </main>
+  <footer class="footer-main">
+    <div class="container">
+      <section>
+        <h3>Adresse</h3>
+        <address>
+          GFN GmbH<br/>
+          Maassstrassse 24<br/>
+          60123 Heidelberg
+        </address>
+      </section>
+      <section>
+        <h3>Weitere Information</h3>
+        <nav class="menu-meta">
+          <ul class="list">
+            <li><a href="#">Datenschutz</a></li>
+            <li><a href="#">Impressum</a></li>
+          </ul>
+        </nav>
+
+        <h3 class="not-visible">Kontaktdaten</h3>
+        <nav class="menu-contact">
+          <ul class="list">
+            <li><a href="mailto:info@gfn.de">info@gfn.de</a></li>
+            <li><a href="tel:0049622183320">+49 6221 83320</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section>
+        <h3>Social Media</h3>
+        <nav class="menu-social">
+          <ul class="list">
+            <li><a href="#"><i class="fab fa-facebook-f icon-rounded"></i><span>Facebook</span></a></li>
+
+            <li><a href="#"><i class="fab fa-twitter icon-rounded"></i><span>Twitter</span></a></li>
+
+            <li><a href="#"><i class="fab fa-youtube icon-rounded"></i><span>Youtube</span></a></li>
+
+            <li><a href="#"><i class="fab fa-instagram icon-rounded"></i><span>Instagram</span></a></li>
+          </ul>
+        </nav>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>
