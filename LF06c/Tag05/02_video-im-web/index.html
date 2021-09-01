@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video im Web</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h2>Video in HTML über &lt;video&gt;</h2>
+        <blockquote>
+          Das HTML <mark><code>&lt;video&gt;</code></mark> Element wird verwendet, um Videos einzubetten. Es kann verschiedene Quellen für Videos
+          enthalten, die im src Attribut oder im <mark><code>&lt;source&gt;</code></mark> Element repräsentiert werden. Der Webbrowser wählt dann die
+          für ihn passende Quelle aus.
+        </blockquote>
+
+        <ul>
+          <li>
+            Eine Liste der unterstützten Formate:
+            <ul>
+              <li>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats"
+                  >https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats</a
+                >
+              </li>
+              <li>
+                <a href="https://en.wikipedia.org/wiki/HTML5_video">https://en.wikipedia.org/wiki/HTML5_video</a>
+              </li>
+              <li>
+                <a href="https://www.freecodecamp.org/news/video-formats-for-the-web/"
+                  >https://www.freecodecamp.org/news/video-formats-for-the-web/</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            Das Video Element –
+            <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/video">https://developer.mozilla.org/de/docs/Web/HTML/Element/video</a>
+          </li>
+          <li>
+            Das Web Video Text Tracks Format (WebVTT)<a href="https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API"
+              >https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API</a
+            >
+          </li>
+        </ul>
+
+        <div>
+          <video src="assets/video/countdown_short.mp4" controls autoplay muted>
+            <track src="assets/video/countdown.de.vtt" default />
+          </video>
+        </div>
+
+        <div>
+          <video controls autoplay muted>
+            <source src="assets/video/countdown_short_h265.mp4" />
+            <source src="assets/video/countdown_short.webm" type="video/webm" />
+            <source src="assets/video/countdown_short.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
