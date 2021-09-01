@@ -1,0 +1,353 @@
+/* almgemeine formatierung */
+::selection {
+  background-color: rgb(132, 206, 240);
+  color: #333;
+}
+
+*,
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  line-height: 1.5em;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h2,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+/* Navigation */
+
+.menu-main {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-main ul.list {
+  list-style: none;
+  z-index: 1000;
+  margin: 0;
+  padding: 0;
+  background-color: steelblue;
+}
+
+/* (>) child- combinator - ersten Kindelement werden angesprochen */
+.menu-main ul.list > li {
+  display: inline-block;
+}
+
+.menu-main ul.list > li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  background-color: steelblue;
+  padding: 1rem;
+
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  z-index: 9999;
+}
+
+.menu-main ul.list > li > a:hover,
+.menu-main ul.list > li > a:focus {
+  color: white;
+  background: #333;
+  outline: none;
+  transition: all 1s ease 0s;
+
+  /* width: 200px;
+  transition: all 1s cubic-bezier(0.05, 0.75, 0.46, 0.86); */
+
+  /* transition-duration: all 1s ease;
+  transition-property: all;
+  transition-timing-function: ease;
+  transition-delay: 0s; */
+}
+
+/* .menu-main ul.sublist {
+  position: absolute;
+  z-index: 9000;
+} */
+
+.menu-main ul.sublist {
+  position: absolute;
+  z-index: 9000;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-main ul.sublist > li {
+  background-color: rgba(255, 255, 255, 0.9);
+  min-width: 100px;
+  border-bottom: 1px dotted steelblue;
+}
+
+.menu-main ul.sublist > li:last-child {
+  border-bottom: 5px solid #008fb3;
+  border-radius: 0 0 10px 10px;
+}
+
+.menu-main ul.sublist > li > a {
+  color: #2a2a2a;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
+
+/* ein und ausblenden untermenu*/
+.menu-main ul.sublist {
+  left: -9999px;
+  transform: translate(0, -100%);
+  transition: transform 0.6s ease-out;
+}
+
+/* Über display fahren geht es auf (focus-within lässt sich selektieren im dropdown)*/
+.menu-main ul.list li:hover ul.sublist,
+.menu-main ul.list li:focus ul.sublist,
+.menu-main ul.list li:focus-within ul.sublist {
+  left: 0;
+  transform: translate(0, 0);
+}
+
+/* menu social */
+
+.menu-social ul.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-social ul.list li {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+}
+
+.menu-social ul.list li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-social ul.list li a span {
+  display: none;
+}
+
+.menu-social ul.list li a i::before {
+  font-size: 1.5rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: inline-block;
+}
+
+.menu-social ul.list li a i:hover {
+  transition: 1s;
+}
+
+.menu-social ul.list li a i.fa-facebook-f:hover {
+  background-color: #4267b2;
+}
+
+.icon-rounded {
+  overflow: hidden;
+  background-color: #555;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2ä);
+}
+
+/* head Kopfbereich*/
+
+header.header-main {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+
+  background: #555 url('../img/bg-large.jpg') center/ cover no-repeat border-box border-box fixed;
+  position: relative;
+
+  background-color: #555;
+  background-image: url('../img/bg-large.jpg') center no-repeat;
+  background-size: cover;
+}
+
+header.header-main::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(93, 163, 221, 0.2);
+}
+
+header.header-main .box-center {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.logo-main {
+  margin: 0 0 3rem;
+}
+
+.logo-main > figcaption {
+  text-indent: -9999;
+  height: 1px;
+  width: 1px;
+  position: absolute;
+}
+
+.logo-main img {
+  width: 100%;
+  max-width: 150px;
+}
+
+.logo-main :hover {
+  transform: rotateY(360deg);
+  /* transform: rotate(360deg); */
+  transition-duration: 2.5s;
+}
+
+/*hauptinhalt - MAIN*/
+
+/* mobile first */
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media (min-width: 576px) {
+  .container {
+    width: auto;
+    max-width: 540px;
+    padding: 0;
+    /* background-color: rgba(0, 0, 0, 0.05); */
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: auto;
+    max-width: 720px;
+    padding: 0;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+  }
+}
+
+@media (min-width: 996px) {
+  .container {
+    width: auto;
+    max-width: 920px;
+    padding: 0;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: auto;
+    max-width: 1140px;
+    padding: 0;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: auto;
+    max-width: 1320px;
+    padding: 0;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+  }
+}
+
+h2 + p {
+  color: rgb(88, 176, 248);
+  /* 'text-shadow: rgb(0, 0, 0);' */
+}
+
+.section-pseudoclasses .container > p::first-letter {
+  color: rgb(0, 83, 161);
+  font-size: 2.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+table.my-table,
+table.my-table td,
+table.my-table th {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+table.my-table td {
+  padding: 0.5rem;
+}
+
+table.my-table thead th {
+  background-color: rgb(88, 176, 248);
+  color: rgb(255, 255, 255);
+}
+
+table.my-table tbody tr:nth-child(odd) {
+  background-color: rgba(0, 162, 255, 0.05);
+}
+
+/* fussbereich footer */
+
+footer.footer-main {
+  padding: 3rem;
+  width: 100%;
+  min-height: 300px;
+  color: #ffffff;
+  background: rgba(0, 96, 151, 1);
+}
+
+footer.footer-main h3 {
+  color: rgb(253, 253, 253);
+  padding: 1rem 0;
+  border-bottom: 5px solid steelblue;
+}
+
+.not-visible {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  visibility: hidden;
+}
+
+.footer-main .container {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  /* flex-flow: column wrap; */
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  .footer-main .container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
