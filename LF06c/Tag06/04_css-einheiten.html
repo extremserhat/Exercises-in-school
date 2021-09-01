@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Die wichtigsten CSS "Längen"-Einheiten</title>
+    <style>
+      /* CSS-Type-Selector - Element werden über ihren Elementnamen angesprochen. */
+      html,
+      body {
+        height: 100%;
+        font-size: 16px;
+      }
+
+      .boxes {
+        width: 100%;
+        background-color: #ccc;
+        margin-bottom: 10px;
+      }
+      /* CSS-Class-Selector - Elemente werden über ihren Klassennamen (class-Attribut) angesprochen */
+
+      .boxes .box {
+        display: inline-block;
+        background-color: #000;
+        color: #fff;
+        margin: 5px;
+        margin-right: 0;
+        min-width: 50px;
+        min-height: 50px;
+      }
+
+      /* 
+        EM
+        Vertikale Größe der Schrift, relativ zur Schriftgröße des Eltern-Elements. Über den Daumen gepeilt kann 1em als 16 Pixel gerechnet werden.
+
+        Die Einheit nimmt Bezug auf seine Elternelemente (relativ)
+      */
+      .box-em {
+        padding: 1em;
+        font-size: 20px;
+      }
+
+      .box-em span {
+        font-size: 2em;
+      }
+
+      /*
+        REM (ROOT-EM)
+        font-size in rem wird immer relativ zum HTML-Element bzw. Body-Element berechnet
+      */
+      .box-rem {
+        padding: 1rem;
+        font-size: 2rem;
+      }
+      .box-rem span {
+        font-size: 2rem;
+      }
+
+      .box-px {
+        font-size: 32px;
+        padding: 16px;
+      }
+
+      .box-percent {
+        padding: 5%;
+        font-size: 80%;
+      }
+      .box-vh {
+        padding: 10vh;
+        padding-left: 10vw;
+        font-size: 10vh;
+      }
+
+      .box-pt {
+        font-size: 12pt;
+      }
+
+      .box-mm {
+        padding: 3mm;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>CSS Einheiten</h2>
+      <p>Die wichtigsten CSS Längeneinheiten</p>
+      <p>
+        <a href="https://www.mediaevent.de/tutorial/masseinheiten.html">https://www.mediaevent.de/tutorial/masseinheiten.html</a>
+      </p>
+
+      <div class="boxes">
+        <div class="box box-px"><span>px</span></div>
+        <div class="box box-percent"><span>%</span></div>
+        <div class="box box-rem"><span>rem</span></div>
+
+        <div class="box box-em">
+          <span>em</span>
+        </div>
+
+        <div class="box box-vh"><span>vh/vw</span></div>
+      </div>
+      <div class="boxes">
+        <div class="box box-pt"><span>(pt)</span></div>
+        <div class="box box-mm"><span>(mm)</span></div>
+      </div>
+    </div>
+  </body>
+</html>

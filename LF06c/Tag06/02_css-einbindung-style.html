@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS mit Style-Element</title>
+    <style>
+      /* Type-selector */
+      body {
+        padding: 16px;
+        font-size: 20px;
+        line-height: 1.5em;
+      }
+
+      /* Type-selector (Kommatar getrennte Aufzählung) */
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+
+      h1 {
+        font-size: 42px;
+        font-weight: 400;
+        color: tomato;
+      }
+
+      h2 {
+        font-size: 1.5em;
+        color: salmon;
+      }
+
+      a {
+        text-decoration: none;
+        color: salmon;
+        background-color: lightgrey;
+        padding: 20px;
+        /* width: 200px; */
+        display: inline-block;
+        /* 
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: red; 
+        */
+        margin: 3px;
+        border-bottom: 1px solid red;
+      }
+
+      /* 
+      a:visited {
+        color: slateblue;
+      } 
+      */
+
+      a:hover,
+      a:focus {
+        color: tomato;
+        background-color: #222;
+        outline: none;
+      }
+
+      a:active {
+        color: gold;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      /* Descendant combinator */
+      ul li {
+        list-style: square;
+        list-style-position: outside;
+      }
+
+      ul li a {
+        color: magenta;
+        background-color: #2a2a2a;
+        border-bottom: 0;
+        width: 300px;
+        padding: 10px;
+        margin: 3px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Wir lernen CSS!</h1>
+        <p>
+          Wir gestalten den ersten Text mit <abbr title="Cascading Style Sheets">CSS</abbr> und auch den darin vorhandenen Link zur
+          <a href="https://www.gfn.de">GFN Webseite</a>.
+        </p>
+
+        <h2>Linkliste</h2>
+        <p>Die Linkliste wird ebenfalls formatiert.</p>
+        <ul>
+          <li><a href="https://www.w3.org/TR/?title=css&tag=css">CSS Standards & Drafts</a></li>
+          <li><a href="http://www.corelangs.com/css/basics/versions.html">CSS Versionen</a></li>
+          <li><a href="https://cssreference.io/">CSS Reference</a></li>
+          <li><a href="https://caniuse.com/">Caniuse.com</a></li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS box-sizing</title>
+    <style>
+      
+      *, html {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .container {
+        background-color: #ccc;
+        height: 100%;
+      }
+
+      .box {
+        width: 400px;
+        height: 400px;
+        padding: 2rem;
+        border: 10px solid orange;
+        background-color: #555;
+        color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>CSS box-sizing</h1>
+    <div class="container">
+      <div class="box">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. A aspernatur adipisci libero distinctio id similique atque. Enim ipsum, cum natus
+        sapiente quo nobis voluptatum accusamus deserunt earum quidem vitae itaque!
+      </div>
+    </div>
+  </body>
+</html>

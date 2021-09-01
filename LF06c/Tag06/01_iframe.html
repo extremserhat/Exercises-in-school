@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iframe</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* iframe {
+        width: 100%;
+        height: 450px;
+        border: 1px solid black;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Iframe in HTML über &lt;iframe&gt;</h2>
+      <blockquote>
+        Mit dem <mark><code>&lt;iframe&gt;</code></mark> HTML Element („inline frame“) kann eine weitere HTML Seite in die aktuelle Seite eingebunden
+        werden.
+      </blockquote>
+
+      <ul>
+        <li>
+          Das IFrame Element –
+          <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/iframe">https://developer.mozilla.org/de/docs/Web/HTML/Element/iframe</a>
+        </li>
+      </ul>
+
+      <div>
+        <!-- IFRAME BEISPIELE-->
+
+        <iframe src="../tag05/01_audio-im-web/index.html" style="width: 100%; height: 450px; border: 1px solid black"></iframe>
+
+        <iframe src="../tag05/02_video-im-web/index.html" width="100%" height="450" frameborder="1"></iframe>
+
+        <iframe src="https://www.gfn.de" width="100%" height="450" frameborder="0"></iframe>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/qmTNnZCDJY0"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/OrxmtDw4pVI"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>

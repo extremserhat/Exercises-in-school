@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Innere und äußere Abstände</title>
+    <style>
+      *,
+      html {
+        box-sizing: border-box;
+      }
+
+      .boxes {
+        background-color: #ccc;
+        min-height: 200px;
+        width: 100%;
+        display: inline-block;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        color: white;
+        border: 5px solid tomato;
+      }
+
+      .box-margin {
+        margin: 10px; /* top right bottom left */
+        margin: 10px 20px; /* top bottom | left right */
+        margin: 10px 20px 30px; /* top | left right | bottom */
+        margin: 10px 20px 30px 40px; /* top | right | bottom | left */
+
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        margin-left: 40px;
+      }
+      .box-padding {
+        padding: 10px; /* top right bottom left */
+        padding: 10px 20px; /* top bottom | left right */
+        padding: 10px 20px 30px; /* top | left right | bottom */
+        padding: 10px 20px 30px 40px; /* top | right | bottom | left */
+
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        padding-left: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>CSS - Innere und äußere Abstände</h1>
+
+      <!-- Emmet: .boxes>.box*2>span{BOX} -->
+
+      <div class="boxes">
+        <div class="box box-margin"><span>BOX</span></div>
+        <div class="box box-padding"><span>BOX</span></div>
+      </div>
+    </main>
+  </body>
+</html>
