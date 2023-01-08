@@ -1,6 +1,6 @@
 # Die Arbeit mit HMTL
 
-Meine ersten Schritte in der Welt von "Codieren" besser gesagt des Tagen 😎 es war sehr anstrengen diese 2 Wochen ohne vorkenntnisse aber es hat sich gehlohnt.
+Meine ersten Schritte in der Welt von "Codieren" besser gesagt des Tagen 😎.
 
 ## Die einführung in die Welt des Tags
 
